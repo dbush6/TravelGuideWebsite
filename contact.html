@@ -1,1 +1,52 @@
-contact.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contact — First-Time Travel Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <div class="nav">First-Time Travel Guide</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="passport.html">Passport</a></li>
+          <li><a href="packing.html">Packing</a></li>
+          <li><a href="seasonal.html">Seasonal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="time">
+      <h1>Contact</h1>
+      <p>Questions or feedback? Send a message.</p>
+    </section>
+
+    <section class="start">
+      <form>
+        <label for="name">Name</label>
+        <input id="name" class="input" type="text" required>
+
+        <label for="email">Email</label>
+        <input id="email" class="input" type="email" required>
+
+        <label for="msg">Message</label>
+        <textarea id="msg" required></textarea>
+
+        <p><button class="btn" type="submit">Submit</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© First-Time Travel Guide</div>
+  </footer>
+</body>
+</html>

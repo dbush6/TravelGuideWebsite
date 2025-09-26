@@ -1,1 +1,102 @@
-packing.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Packing — First-Time Travel Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container header">
+      <div class="nav">First-Time Travel Guide</div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="passport.html">Passport</a></li>
+          <li><a href="packing.html" aria-current="page">Packing</a></li>
+          <li><a href="seasonal.html">Seasonal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="time">
+      <h1>Packing Tips & Tools</h1>
+      <p>Build a smarter list based on your trip.</p>
+    </section>
+
+    <section class="tips">
+      <div class="start">
+        <h2>Packing Basics</h2>
+        <div class="pack">
+          <div class="card"><h3>Clothing</h3><p>Outfits, layers, sleepwear.</p></div>
+          <div class="card"><h3>Documents</h3><p>Passport, copies, visas.</p></div>
+          <div class="card"><h3>Tech</h3><p>Chargers, power bank, adapters.</p></div>
+          <div class="card"><h3>Toiletries</h3><p>Meds, TSA liquids, kit.</p></div>
+        </div>
+
+        <h2>Checklist Generator</h2>
+        <form class="grid">
+          <div>
+            <label for="tripLength">Trip Length</label>
+            <select id="tripLength" class="input">
+              <option value="weekend">Weekend</option>
+              <option value="two-weeks">Two Weeks</option>
+            </select>
+          </div>
+          <div>
+            <label for="climate">Destination Climate</label>
+            <select id="climate" class="input">
+              <option value="tropical">Tropical</option>
+              <option value="temperate">Temperate</option>
+              <option value="cold">Cold</option>
+            </select>
+          </div>
+          <div>
+            <label for="travelType">Travel Type</label>
+            <select id="travelType" class="input">
+              <option value="leisure">Leisure</option>
+              <option value="business">Business</option>
+              <option value="adventure">Adventure</option>
+            </select>
+          </div>
+          <div>
+            <label>&nbsp;</label>
+            <button class="btn" type="button">Generate Checklist</button>
+          </div>
+        </form>
+
+        <div class="card" style="margin-top:16px;">
+          <h3>Generated Checklist (Preview)</h3>
+          <p>This area will display your suggested items (first draft placeholder).</p>
+        </div>
+
+        <h2>Printable Templates</h2>
+        <p>
+          <button class="btn" type="button">Weekend (PDF)</button>
+          <button class="btn" type="button">2-Week (PDF)</button>
+          <button class="btn" type="button">Business (PDF)</button>
+        </p>
+      </div>
+
+      <aside class="sidebar" aria-label="Quick Packing Tips">
+        <h3>Quick Tips 🎒</h3>
+        <ul>
+          <li>Roll clothes to save space.</li>
+          <li>Use packing cubes.</li>
+          <li>Keep meds in carry-on.</li>
+          <li>Leave room for souvenirs.</li>
+        </ul>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© First-Time Travel Guide</div>
+  </footer>
+</body>
+</html>
