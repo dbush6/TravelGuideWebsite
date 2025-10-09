@@ -5,12 +5,19 @@
   <title>About — First-Time Travel Guide</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon_io (3)/favicon.ico">
 </head>
 <body>
   <header>
-    <div class="container header">
-      <div class="nav">First-Time Travel Guide</div>
-      <nav aria-label="Primary">
+    <div class="container header header-grid">
+      <a href="index.html" class="logo">
+        <img src="images/travel-guide-logo.png" alt="First-Time Travel Guide Logo">
+      </a>
+      <form class="header-search" role="search" aria-label="Site search" action="#" method="get">
+        <input class="input" type="search" name="q" placeholder="Search travel topics…" aria-label="Search">
+      </form>
+      <a class="hamburger" href="#menu" aria-label="Open menu"><span></span><span></span><span></span></a>
+      <nav class="main-nav" aria-label="Primary">
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="passport.html">Passport</a></li>
@@ -23,23 +30,89 @@
     </div>
   </header>
 
+  <div id="menu" class="menu-panel" aria-label="Mobile menu">
+    <div class="menu-panel__inner">
+      <a href="#" class="menu-close" aria-label="Close menu">×</a>
+      <nav aria-label="Primary mobile">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="passport.html">Passport</a></li>
+          <li><a href="packing.html">Packing</a></li>
+          <li><a href="seasonal.html">Seasonal</a></li>
+          <li><a href="about.html" aria-current="page">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
   <main class="container">
+    <!-- Page intro -->
     <section class="time">
-      <h1>About This Project</h1>
-      <p>Helping first-time travelers prepare with confidence by simplifying passports, packing, and seasonal planning.</p>
+      <h1>About First-Time Travel Guide</h1>
+      <p>We exist to help new travelers see the world with clarity, confidence, and excitement.</p>
     </section>
 
-    <section class="start">
-      <h2>Purpose</h2>
-      <p>First-time travelers face scattered, confusing information. This site brings essential guidance into a clean, beginner-friendly space that’s easy to navigate and pleasant to use.</p>
+    <!-- Mission & Story -->
+    <section class="start" aria-labelledby="mission-heading">
+      <h2 id="mission-heading">Our Mission</h2>
+      <p>
+        Travel changes people. It expands perspective, builds empathy, strengthens families, and sparks curiosity.
+        We’re here to remove the barriers that keep first-time travelers from taking that first step. Whether it’s
+        understanding how to get a passport, knowing what to pack, or choosing the right season to go, we are here to help you through that process.
+      </p>
 
-      <h2>Scope</h2>
-      <p>Five core areas: Home, Passport Guide, Packing Tips, Seasonal Travel Guide, and Contact. International passport guidance is expanding beyond the U.S. to include major countries.</p>
+      <h2>Why We’re Passionate</h2>
+      <p>
+        We’ve felt the stress of filling out new forms, different rules, and the unknowns that come with traveling for the first time. We’ve also felt the
+        joy of watching a child see the ocean for the first time, wandering a new city, sharing a meal in a place we’ve
+        only read about. We want to replace the potential of stress with confidence, allowing you to put more of your energy into
+        creating new memories and new experiences.
+      </p>
+    </section>
+
+    <!-- Benefits of travel -->
+    <section class="start" aria-labelledby="benefits-heading">
+      <h2 id="benefits-heading">The Benefits of Seeing the World</h2>
+      <ul>
+        <li><strong>Perspective:</strong> Exposure to new cultures and histories builds understanding and empathy.</li>
+        <li><strong>Confidence:</strong> Navigating travel boosts problem-solving and resilience.</li>
+        <li><strong>Connection:</strong> Shared experiences bring families and friends closer.</li>
+        <li><strong>Learning:</strong> Educational experiences in geography, languages, food, art, etc.</li>
+      </ul>
+    </section>
+
+    <!-- Trust & Roadmap -->
+    <section class="start" aria-labelledby="trust-heading">
+      <h2 id="trust-heading">Trust, Accuracy & What’s Next</h2>
+      <p>
+        We design with accessibility and clarity in mind and continuously refine based on user feedback.
+        Our immediate roadmap includes expanding passport guidance for Canada, the UK, the EU, Japan, India,
+        and Australia, plus adding more printable and interactive tools.
+      </p>
+
+      <p class="notice">
+        Have suggestions? We’d love to hear them. Head to our <a href="contact.html">Contact</a> page and tell us
+        what would make your next trip easier.
+      </p>
     </section>
   </main>
 
   <footer class="footer">
-    <div class="container">© First-Time Travel Guide</div>
+    <div class="container">
+      <!-- Social Links (dummy placeholders for now) -->
+      <div class="social">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+  
+      <!-- Copyright -->
+      <p>© 2025 First-Time Travel Guide. All Rights Reserved.</p>
+    </div>
   </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

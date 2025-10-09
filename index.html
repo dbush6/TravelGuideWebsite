@@ -1,79 +1,191 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>First-Time Travel Guide</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="styles.css">
-    </head>
-    <body>
-        <header>
-            <div class="container header">
-                <div class="nav">First-Time Travel Guide</div>
-                    <nav aria-label="Navigation">
-                        <ul>
-                            <li><a href="passport.html">Passport</a></li>
-                            <li><a href="packing.html">Packing</a></li>
-                            <li><a href="seasonal.html">Seasonal</a></li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
+<head>
+  <meta charset="utf-8">
+  <title>First-Time Travel Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/x-icon" href="images/favicon_io (3)/favicon.ico">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container header header-grid">
+      <!-- Left: Logo -->
+      <a href="index.html" class="logo">
+        <img src="images/travel-guide-logo.png" alt="First-Time Travel Guide Logo">
+      </a>
+
+      <!-- Center: Search -->
+      <form class="header-search" role="search" aria-label="Site search" action="#" method="get">
+        <input class="input" type="search" name="q" placeholder="Search travel topics…" aria-label="Search">
+      </form>
+
+      <!-- Right: Desktop nav / Mobile hamburger -->
+      <a class="hamburger" href="#menu" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </a>
+
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="passport.html">Passport</a></li>
+          <li><a href="packing.html">Packing</a></li>
+          <li><a href="seasonal.html">Seasonal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile/Tablet slide-over menu (no JS; uses :target) -->
+  <div id="menu" class="menu-panel" aria-label="Mobile menu">
+    <div class="menu-panel__inner">
+      <a href="#" class="menu-close" aria-label="Close menu">×</a>
+      <nav aria-label="Primary mobile">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="passport.html">Passport</a></li>
+          <li><a href="packing.html">Packing</a></li>
+          <li><a href="seasonal.html">Seasonal</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Main -->
+  <main class="container">
+    <section class="time">
+      <h1>Your First-Time Travel Guide</h1>
+      <p>Confident travel starts here!</p>
+    </section>
+
+    <!-- Home layout wrapper to control order across breakpoints -->
+    <div class="home-layout">
+        <section class="homehero">
+            <div class="homehero-images">
+              <img src="images/familycheckin.jpg" alt="Family checking in" class="hero-img">
+              <img src="images/girl-holding-passport.jpg" alt="Girl holding passport" class="hero-img main-hero">
+              <img src="images/familyatairport.jpg" alt="Family sitting down" class="hero-img">
             </div>
-        </header>
-        <main class="container">
-            <section class="time">
-                <h1>Your First-Time Travel Guide</h1>
-                <p>Confident travel starts here!</p>
-                <div class="timezone">
-                    <input class="input" type="search" placeholder="Search travel topics..." aria-label="Search">
-                    <label for="timezoneselect">Select Timezone</label>
-                    <select id="timezoneselect" aria-label="Select Your Timezone">
-                        <option>USA/New York</option>
-                        <option disabled>USA/Chicago (Coming Soon)</option>
-                        <option disabled>USA/Dallas (Coming Soon)</option>
-                        <option disabled>USA/Arizona (Coming Soon)</option>
-                        <option disabled>USA/Los Angeles (Coming Soon)</option>
-                        <option disabled>Asia/Tokyo (Coming Soon)</option>
-                        <option disabled>Asia/Beijing (Coming Soon)</option>
-                        <option disabled>Europe/Paris (Coming Soon)</option>
-                        <option disabled>Europe/London (Coming Soon)</option>
-                    </select>
-                </div>
-            </section>
-            <section class="tips">
-                <div class="start">
-                    <h2>Start Here</h2>
-                    <p>New to international travel?<br>Use our Passport Guide to learn how to apply, then build your packing list and check for the best season for your preferred destination.</p>
-                </div>
-                <aside class="sidebar" aria-label="Quick Travel Tips">
-                    <h3>Quick Travel Tips</h3>
-                    <ul>
-                        <li>Make photocopies of your passport.</li>
-                        <li>Roll clothes to save space.</li>
-                        <li>Check entry rules for destination.</li>
-                        <li>Weigh bags before arriving at airport.</li>
-                    </ul>
-                </aside>
-            </section>
-            <section class="grid">
-                <a class="card" href="passport.html">
-                    <h3>✈️ 🛂<br>Passport Guide</h3>
-                    <p>Step-by-step DS-11 Form for USA Passport</p>
-                </a>
-                <a class="card" href="packing.html">
-                    <h3>🧳 🌎<br>Packing Guide</h3>
-                    <p>Interactive Checklist</p>
-                </a>
-                <a class="card" href="seasonal.html">
-                    <h3>☀️ 🍂 ❄️ 🌸<br>Seasonal Travel</h3>
-                    <p>Best and worst times by region</p>    
-                </a>
-            </section>
-        </main>
-        <footer class="footer">
-            <div class="container">© First-Time Travel Guide</div>
-        </footer>
-    </body>
+          </section>
+      <!-- Tips / Quick Tips -->
+      <section class="tips">
+        <div class="start">
+          <h2>Start Here</h2>
+          <p>
+            New to international travel?<br>
+            Use our Passport Guide to learn how to apply, then build your packing list and
+            check the best season for your preferred destination.
+          </p>
+        </div>
+        <aside class="sidebar" aria-label="Quick Travel Tools and Tips">
+          <!-- NEW: Timezone select above Quick Tips -->
+          <div class="tzone-box">
+            <label for="tzone">Select Timezone</label>
+            <select id="tzone" aria-label="Select your timezone">
+  <optgroup label="North America">
+    <option>USA / Eastern (New York)</option>
+    <option>USA / Central (Chicago)</option>
+    <option>USA / Mountain (Denver)</option>
+    <option>USA / Pacific (Los Angeles)</option>
+    <option disabled>Canada / Toronto (Coming Soon)</option>
+    <option disabled>Canada / Vancouver (Coming Soon)</option>
+    <option disabled>Mexico / Mexico City (Coming Soon)</option>
+  </optgroup>
+
+  <optgroup label="South America">
+    <option disabled>Brazil / São Paulo (Coming Soon)</option>
+    <option disabled>Argentina / Buenos Aires (Coming Soon)</option>
+    <option disabled>Chile / Santiago (Coming Soon)</option>
+    <option disabled>Peru / Lima (Coming Soon)</option>
+    <option disabled>Colombia / Bogotá (Coming Soon)</option>
+  </optgroup>
+
+  <optgroup label="Europe">
+    <option disabled>United Kingdom / London (Coming Soon)</option>
+    <option disabled>France / Paris (Coming Soon)</option>
+    <option disabled>Germany / Berlin (Coming Soon)</option>
+    <option disabled>Spain / Madrid (Coming Soon)</option>
+    <option disabled>Italy / Rome (Coming Soon)</option>
+    <option disabled>Greece / Athens (Coming Soon)</option>
+    <option disabled>Turkey / Istanbul (Coming Soon)</option>
+  </optgroup>
+
+  <optgroup label="Africa & Middle East">
+    <option disabled>South Africa / Cape Town (Coming Soon)</option>
+    <option disabled>Egypt / Cairo (Coming Soon)</option>
+    <option disabled>Kenya / Nairobi (Coming Soon)</option>
+    <option disabled>UAE / Dubai (Coming Soon)</option>
+    <option disabled>Saudi Arabia / Riyadh (Coming Soon)</option>
+  </optgroup>
+
+  <optgroup label="Asia">
+    <option disabled>India / New Delhi (Coming Soon)</option>
+    <option disabled>China / Beijing (Coming Soon)</option>
+    <option disabled>Japan / Tokyo (Coming Soon)</option>
+    <option disabled>South Korea / Seoul (Coming Soon)</option>
+    <option disabled>Thailand / Bangkok (Coming Soon)</option>
+    <option disabled>Singapore / Singapore (Coming Soon)</option>
+    <option disabled>Indonesia / Jakarta (Coming Soon)</option>
+  </optgroup>
+
+  <optgroup label="Oceania & Pacific">
+    <option disabled>Australia / Sydney (Coming Soon)</option>
+    <option disabled>Australia / Perth (Coming Soon)</option>
+    <option disabled>New Zealand / Auckland (Coming Soon)</option>
+    <option disabled>Fiji / Suva (Coming Soon)</option>
+  </optgroup>
+</select>
+            <p class="notice" style="margin-top:10px;">Site tips & timelines will align with your selected timezone.</p>
+          </div>
+
+          <h3>Quick Travel Tips</h3>
+          <ul>
+            <li>Make photocopies of your passport.</li>
+            <li>Arrive earlier than usual for international flights.</li>
+            <li>Check entry rules for your destination.</li>
+            <li>Weigh bags before arriving at the airport.</li>
+          </ul>
+        </aside>
+      </section>
+
+      <!-- Cards -->
+      <section class="grid home-cards">
+        <a class="card passport-card" href="passport.html">
+          <h3>Passport Guide</h3>
+          <p>Step-by-step DS-11 Form for USA Passport</p>
+        </a>
+        <a class="card packing-card" href="packing.html">
+          <h3>Packing Guide</h3>
+          <p>Interactive Checklist</p>
+        </a>
+        <a class="card seasonal-card" href="seasonal.html">
+          <h3>Seasonal Guide</h3>
+          <p>Best and worst times by region</p>
+        </a>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <!-- Social Links (dummy placeholders for now) -->
+      <div class="social">
+        <a href="#" aria-label="Facebook"><ion-icon name="logo-facebook"></ion-icon></a>
+        <a href="#" aria-label="Twitter"><ion-icon name="logo-twitter"></ion-icon></a>
+        <a href="#" aria-label="Instagram"><ion-icon name="logo-instagram"></ion-icon></a>
+        <a href="#" aria-label="YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+      </div>
+  
+      <!-- Copyright -->
+      <p>© 2025 First-Time Travel Guide. All Rights Reserved.</p>
+    </div>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
 </html>
